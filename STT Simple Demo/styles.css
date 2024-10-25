@@ -1,0 +1,85 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --blue: rgb(0, 91, 170);
+  --yellow: rgb(240, 175, 19);
+}
+
+@font-face {
+  font-family: "Mitra";
+  src: url("/B MITRA.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Mitra-Bold";
+  src: url("/B MITRA BOLD.TTF") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+/* Body and container styling */
+body {
+  font-family: Mitra,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: 30px auto;
+}
+
+/* Microphone button styling */
+.mic-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.mic-btn:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mic-btn:active {
+  background-color: var(--blue);
+  transform: scale(0.95);
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  padding: 15px;
+  border: 1px solid #4b4848;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: Mitra,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea:focus {
+  border-color: var(--blue);
+}
+
+textarea,
+.mic-btn {
+  transition: all 0.3s ease-in-out;
+}
